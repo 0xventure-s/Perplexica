@@ -1,0 +1,35 @@
+use_default_settings: true
+
+general:
+  debug: false
+  instance_name: "SearXNG"
+  privacypolicy_url: false
+  donation_url: false
+  contact_url: false
+  enable_metrics: true
+
+search:
+  formats:
+    - html
+    - json
+  default_format: html
+  autocomplete: ""
+  
+server:
+  secret_key: "cambiar_esta_clave_por_seguridad"
+  bind_address: "0.0.0.0"
+  port: 8080
+  limiter: false
+  image_proxy: false
+  
+ui:
+  default_theme: simple
+  default_locale: es
+  theme_args:
+    simple_style: auto
+    
+redis:
+  use_unix_socket: false
+  host: localhost
+  port: 6379
+  db: 0 
