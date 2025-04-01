@@ -19,40 +19,30 @@ import { Fragment } from 'react';
 const focusModes = [
   {
     key: 'webSearch',
-    title: 'All',
-    description: 'Searches across all of the internet',
+    title: 'VisionNews',
+    description: 'Busca noticias en todo el mundo',
     icon: <Globe size={20} />,
   },
   {
     key: 'academicSearch',
-    title: 'Academic',
-    description: 'Search in published academic papers',
+    title: 'Academico',
+    description: 'Busca artículos académicos en todo el mundo',
     icon: <SwatchBook size={20} />,
   },
   {
     key: 'writingAssistant',
-    title: 'Writing',
-    description: 'Chat without searching the web',
+    title: 'Escritor',
+    description: 'Chat sin buscar en la web',
     icon: <Pencil size={16} />,
   },
-  {
-    key: 'wolframAlphaSearch',
-    title: 'Wolfram Alpha',
-    description: 'Computational knowledge engine',
-    icon: <BadgePercent size={20} />,
-  },
+  
   {
     key: 'youtubeSearch',
     title: 'Youtube',
-    description: 'Search and watch videos',
+    description: 'Busca y mira videos',
     icon: <SiYoutube className="h-5 w-auto mr-0.5" />,
   },
-  {
-    key: 'redditSearch',
-    title: 'Reddit',
-    description: 'Search for discussions and opinions',
-    icon: <SiReddit className="h-5 w-auto mr-0.5" />,
-  },
+  
 ];
 
 const Focus = ({

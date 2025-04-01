@@ -14,9 +14,12 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Perplexica - Chat with the internet',
+  title: 'Periodista 1 - Vision Tech',
   description:
-    'Perplexica is an AI powered chatbot that is connected to the internet.',
+    'Periodista 1 es un asistente de IA que te ayuda a encontrar información relevante sobre cualquier tema.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({

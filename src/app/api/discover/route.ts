@@ -1,18 +1,14 @@
 import { searchSearxng } from '@/lib/searxng';
 
 const articleWebsites = [
-  'yahoo.com',
-  'www.exchangewire.com',
-  'businessinsider.com',
-  /* 'wired.com',
-  'mashable.com',
-  'theverge.com',
-  'gizmodo.com',
-  'cnet.com',
-  'venturebeat.com', */
+  
+  
+  'lanacion.com.ar',
+  'clarin.com',
+  'pagina12.com.ar',
 ];
 
-const topics = ['AI', 'tech']; /* TODO: Add UI to customize this */
+const topics = ['Politics', 'Economy']; /* TODO: Add UI to customize this */
 
 export const GET = async (req: Request) => {
   try {

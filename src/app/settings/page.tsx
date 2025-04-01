@@ -348,7 +348,7 @@ const Page = () => {
           </Link>
           <div className="flex flex-row space-x-0.5 items-center">
             <SettingsIcon size={23} />
-            <h1 className="text-3xl font-medium p-2">Settings</h1>
+            <h1 className="text-3xl font-medium p-2">Ajustes</h1>
           </div>
         </div>
         <hr className="border-t border-[#2B2C2C] my-4 w-full" />
@@ -397,11 +397,10 @@ const Page = () => {
                     </div>
                     <div>
                       <p className="text-sm text-black/90 dark:text-white/90 font-medium">
-                        Automatic Image Search
+                        Búsqueda de imágenes automática
                       </p>
                       <p className="text-xs text-black/60 dark:text-white/60 mt-0.5">
-                        Automatically search for relevant images in chat
-                        responses
+                        Busca automáticamente imágenes relevantes en las respuestas de chat
                       </p>
                     </div>
                   </div>
@@ -439,11 +438,10 @@ const Page = () => {
                     </div>
                     <div>
                       <p className="text-sm text-black/90 dark:text-white/90 font-medium">
-                        Automatic Video Search
+                          Búsqueda de videos automática
                       </p>
                       <p className="text-xs text-black/60 dark:text-white/60 mt-0.5">
-                        Automatically search for relevant videos in chat
-                        responses
+                        Busca automáticamente videos relevantes en las respuestas de chat
                       </p>
                     </div>
                   </div>
@@ -478,7 +476,7 @@ const Page = () => {
                 <div className="flex flex-col space-y-4">
                   <div className="flex flex-col space-y-1">
                     <p className="text-black/70 dark:text-white/70 text-sm">
-                      Chat Model Provider
+                      Proveedor de modelo de chat
                     </p>
                     <Select
                       value={selectedChatModelProvider ?? undefined}
@@ -508,7 +506,7 @@ const Page = () => {
                     selectedChatModelProvider != 'custom_openai' && (
                       <div className="flex flex-col space-y-1">
                         <p className="text-black/70 dark:text-white/70 text-sm">
-                          Chat Model
+                          Modelo de chat
                         </p>
                         <Select
                           value={selectedChatModel ?? undefined}
@@ -555,11 +553,11 @@ const Page = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Model Name
+                        Nombre del modelo
                       </p>
                       <Input
                         type="text"
-                        placeholder="Model name"
+                        placeholder="Nombre del modelo"
                         value={config.customOpenaiModelName}
                         isSaving={savingStates['customOpenaiModelName']}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -575,11 +573,11 @@ const Page = () => {
                     </div>
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Custom OpenAI API Key
+                        Clave de API personalizada de OpenAI
                       </p>
                       <Input
                         type="text"
-                        placeholder="Custom OpenAI API Key"
+                        placeholder="Clave de API personalizada de OpenAI"
                         value={config.customOpenaiApiKey}
                         isSaving={savingStates['customOpenaiApiKey']}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -595,11 +593,11 @@ const Page = () => {
                     </div>
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Custom OpenAI Base URL
+                        URL base personalizada de OpenAI
                       </p>
                       <Input
                         type="text"
-                        placeholder="Custom OpenAI Base URL"
+                        placeholder="URL base personalizada de OpenAI"
                         value={config.customOpenaiApiUrl}
                         isSaving={savingStates['customOpenaiApiUrl']}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -620,7 +618,7 @@ const Page = () => {
                 <div className="flex flex-col space-y-4 mt-4 pt-4 border-t border-light-200 dark:border-dark-200">
                   <div className="flex flex-col space-y-1">
                     <p className="text-black/70 dark:text-white/70 text-sm">
-                      Embedding Model Provider
+                      Proveedor de modelo de embedding
                     </p>
                     <Select
                       value={selectedEmbeddingModelProvider ?? undefined}
@@ -649,7 +647,7 @@ const Page = () => {
                   {selectedEmbeddingModelProvider && (
                     <div className="flex flex-col space-y-1">
                       <p className="text-black/70 dark:text-white/70 text-sm">
-                        Embedding Model
+                        Modelo de embedding
                       </p>
                       <Select
                         value={selectedEmbeddingModel ?? undefined}
@@ -696,11 +694,11 @@ const Page = () => {
               <div className="flex flex-col space-y-4">
                 <div className="flex flex-col space-y-1">
                   <p className="text-black/70 dark:text-white/70 text-sm">
-                    OpenAI API Key
+                    Clave de API de OpenAI
                   </p>
                   <Input
                     type="text"
-                    placeholder="OpenAI API Key"
+                    placeholder="Clave de API de OpenAI"
                     value={config.openaiApiKey}
                     isSaving={savingStates['openaiApiKey']}
                     onChange={(e) => {
@@ -715,11 +713,11 @@ const Page = () => {
 
                 <div className="flex flex-col space-y-1">
                   <p className="text-black/70 dark:text-white/70 text-sm">
-                    Ollama API URL
+                    URL de API de Ollama
                   </p>
                   <Input
                     type="text"
-                    placeholder="Ollama API URL"
+                    placeholder="URL de API de Ollama"
                     value={config.ollamaApiUrl}
                     isSaving={savingStates['ollamaApiUrl']}
                     onChange={(e) => {
@@ -734,11 +732,11 @@ const Page = () => {
 
                 <div className="flex flex-col space-y-1">
                   <p className="text-black/70 dark:text-white/70 text-sm">
-                    GROQ API Key
+                    Clave de API de GROQ
                   </p>
                   <Input
                     type="text"
-                    placeholder="GROQ API Key"
+                    placeholder="Clave de API de GROQ"
                     value={config.groqApiKey}
                     isSaving={savingStates['groqApiKey']}
                     onChange={(e) => {
@@ -753,11 +751,11 @@ const Page = () => {
 
                 <div className="flex flex-col space-y-1">
                   <p className="text-black/70 dark:text-white/70 text-sm">
-                    Anthropic API Key
+                    Clave de API de Anthropic
                   </p>
                   <Input
                     type="text"
-                    placeholder="Anthropic API key"
+                    placeholder="Clave de API de Anthropic"
                     value={config.anthropicApiKey}
                     isSaving={savingStates['anthropicApiKey']}
                     onChange={(e) => {
@@ -776,7 +774,7 @@ const Page = () => {
                   </p>
                   <Input
                     type="text"
-                    placeholder="Gemini API key"
+                    placeholder="Clave de API de Gemini"
                     value={config.geminiApiKey}
                     isSaving={savingStates['geminiApiKey']}
                     onChange={(e) => {
